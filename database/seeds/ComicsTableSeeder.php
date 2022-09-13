@@ -14,7 +14,7 @@ class ComicsTableSeeder extends Seeder
     public function run(Faker $faker)
     {
         $type= 'comic-book';
-        for ($i=0; $i < 10; $i++) { 
+        for ($i=0; $i < 22; $i++) { 
             $newComic = new Comic();
             $newComic->title = $faker->realText(30);
             $newComic->description = $faker->paragraph(2, true);

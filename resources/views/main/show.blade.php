@@ -2,7 +2,7 @@
 
 @section('main-content')
     <ol>
-        <li> {{$comic->id}} - {{$comic->title}} - {{$comic->price}} - {{$comic->description}} </li>
+        <li> {{$Comic->id}} - {{$Comic->title}} - {{$Comic->price}} - {{$Comic->description}} </li>
     </ol>
     
 @endsection
