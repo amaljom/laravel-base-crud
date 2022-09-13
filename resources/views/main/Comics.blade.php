@@ -1,11 +1,11 @@
 @extends('home')
 
 @section('main-content')
-    <ol>
+    <ol class="lista">
         @foreach($Comics as $Comic)
             <li>
                 <a href="{{ route('comics.show', $Comic->id) }}">
-                    {{$Comic->id}} - {{$Comic->title}} - {{$Comic->price}}
+                   {{$Comic->title}} - {{$Comic->price}}
                 </a>
                 
             </li>
