@@ -12,7 +12,10 @@
 </head>
 <body>
     @include('includes.Header')
-    @yield('main-content')
+    <main>
+        @yield('main-content')
+    </main>
+    
     @include('includes.Footer')
 </body>
 </html>

@@ -48,7 +48,16 @@ ol li {
 }
 
 .card {
-  padding-top: 40px;
+  padding: 40px;
   text-align: center;
+  width: 400px;
+  border: solid 2px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+body {
+  background-color: rgb(212, 226, 221);
 }
 
