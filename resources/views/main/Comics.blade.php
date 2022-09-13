@@ -4,7 +4,10 @@
     <ol>
         @foreach($comics as $comic)
             <li>
-                {{$comic->id}} - {{$comic->title}} - {{$comic->price}}
+                <a href="{{ route('comics.show', $comic->id) }}">
+                    {{$comic->id}} - {{$comic->title}} - {{$comic->price}}
+                </a>
+                
             </li>
         @endforeach
     </ol>
