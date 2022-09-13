@@ -8,6 +8,7 @@
 </head>
 <body>
     @include('includes.Header')
+    @yield('main-content')
     @include('includes.Footer')
 </body>
 </html>
