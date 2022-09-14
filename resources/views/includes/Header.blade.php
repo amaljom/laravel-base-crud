@@ -3,6 +3,6 @@
     <div>
         <a href="{{ route('home') }}">home</a>
         <a href="{{ route('comics') }}"> comics</a>
-        <a href="{{ route('create') }}"> create new </a>
+        <a href="{{ route('comics.create') }}"> create new </a>
     </div>
 </nav>

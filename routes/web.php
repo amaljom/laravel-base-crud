@@ -7,6 +7,8 @@ Route::get('/', 'HomeController@index')->name('home');
 
 
 Route::get('/comics', 'ComicsController@index')->name('comics');
+Route::post('/comics/store', 'ComicsController@store')->name('comics.store');
+Route::get('/comics/create', 'ComicsController@create')->name('comics.create');
 Route::get('/comics/{comic}', 'ComicsController@show')->name('comics.show');
-Route::get('/create', 'ComicsController@create')->name('create');
-Route::get('/new', 'ComicsController@store')->name('store');
+
+// Route::resource('comics', 'ComicsController');
