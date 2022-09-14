@@ -7,7 +7,7 @@
                 <a href="{{ route('comics.show', $Comic->id) }}">
                    {{$Comic->title}} - {{$Comic->price}}
                 </a>
-                
+                <!-- <a href="route('create')"> vai qua</a> -->
             </li>
         @endforeach
     </ol>
