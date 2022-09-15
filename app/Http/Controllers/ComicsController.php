@@ -99,14 +99,10 @@ class ComicsController extends Controller
         return redirect()->route('comics.show', $comic->id);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        //
+        $comic=Comic::findOrFail($id);
+        Comic::destroy($id);
+        return redirect()->route(comics);
     }
 }

@@ -1,7 +1,7 @@
 @extends('home')
 
 @section('main-content')
-<form class="form1" action=" {{ route('comics.store') }} " method="POST">
+<form class="form1" action=" {{ route('comics.store') }} " method="post">
     @csrf
     <label for="title">Title</label>
     <input type="text" name="title" id="title">

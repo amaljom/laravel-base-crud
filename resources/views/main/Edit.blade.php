@@ -1,7 +1,7 @@
 @extends('home')
 
 @section('main-content')
-<form class="form1" action=" {{ route('comics.update', $Comic->id) }} " method="POST">
+<form class="form1" action=" {{ route('comics.update', $Comic->id) }} " method="post">
     @csrf
 
     @method('PUT')
