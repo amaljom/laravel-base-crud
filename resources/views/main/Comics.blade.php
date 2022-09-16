@@ -7,7 +7,7 @@
                 <a href="{{ route('comics.show', $Comic->id) }}">
                    {{$Comic->title}} - {{$Comic->price}}
                 </a>
-                <a href="{{ route('comics.edit', $Comic->id) }}">
+                <a href="{{ route('comics.edit', $Comic) }}">
                    <h2> modifica </h2>
                 </a>
 
